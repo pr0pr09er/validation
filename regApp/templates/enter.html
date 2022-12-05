@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500&family=Roboto:wght@400;700;900&display=swap" rel="stylesheet">
+    <title>Enter</title>
+</head>
+<body>
+    <div class="enter">
+        <div class="container">
+            <div class="wrapper">
+                <div class="enter--title">
+                    <h2 class="enter--title--text">Вход</h2>
+                </div>
+                <div class="enter--subtitle">
+                    <h3 class="enter--subtitle--text">Войти в учетную запись</h3> 
+                </div>
+                <form action="" method="post">
+                    {% csrf_token %}
+                    {% for field in form %}
+                        <div class="item">
+                            <div class="registration--label">{{ field.label_tag }}</div>
+                            {{ field }}
+                        </div>
+                    {% endfor %}
+                    <div class="enter--button">
+                        <button class="btn enter--btn" type="submit">Войти</button>
+                    </div>
+                </form>
+                <p class="enter--redirect">Еще не зарегистрировались?</p>
+                <div class="enter--button">
+                    <a href="http://127.0.0.1:8000/register/" class="btn enter--registrationRedirect">Регистрация</a>
+                </div>
+                <div class="line"></div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>enter

@@ -1,0 +1,153 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+a{
+    text-decoration: none;
+}
+.btn{
+    border: 0;
+    font-size: 13px;
+    padding: 10px 50px;
+    background-color: lightgray;
+    border-radius: 10px;
+    font-family: roboto, sans-serif;
+    font-weight: 700;
+}
+.container{
+    display: flex;
+    justify-content: center;
+}
+.wrapper{
+    margin: 200px;
+    background-color: rgb(55, 85, 155);
+    border-radius: 10px;
+    padding: 20px;
+    width: 250px;
+}
+/* Registration */
+.registration--title{
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+.registration--title--text{
+    font-family: roboto, sans-serif;
+    color: white;
+}
+.registration--subtitle{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 40px;
+}
+.registration--subtitle--text{
+    font-family: roboto, sans-serif;
+    color: white;
+    font-size: 15px;
+}
+.item{
+    flex-direction: column;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 30px;
+}
+.registration--label{
+    font-family: roboto, sans-serif;
+    color: white;
+    margin-bottom: 7px;
+    font-size: 13px;
+}
+.registration--input{
+    border: 0;
+    padding: 10px;
+    border-radius: 10px;
+}
+.registration--button{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+.registration--btn{
+    border: 0;
+    padding: 10px 50px;
+    background-color: lightgray;
+    border-radius: 10px;
+    font-family: roboto, sans-serif;
+    font-weight: 700;
+}
+.registration--redirect{
+    display: flex;
+    justify-content: center;
+    font-family: roboto, sans-serif;
+    font-weight: 500;
+    color: white;
+    margin-bottom: 30px;
+}
+.line{
+    height: 5px;
+    width: 200px;
+    background-color: white;
+    margin: 0 auto;
+    border-radius: 30px;
+    transform: translateY(10px);
+}
+/* Enter */
+.enter--title{
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+.enter--title--text{
+    font-family: roboto, sans-serif;
+    color: white;
+}
+.enter--subtitle{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 40px;
+}
+.enter--subtitle--text{
+    font-family: roboto, sans-serif;
+    color: white;
+    font-size: 15px;
+}
+.enter--label{
+    font-family: roboto, sans-serif;
+    color: white;
+    margin-bottom: 7px;
+    font-size: 13px;
+}
+.enter--input{
+    border: 0;
+    padding: 10px;
+    border-radius: 10px;
+}
+.item{
+    flex-direction: column;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 30px;
+}
+.enter--remind{
+    font-size: 13px;
+    font-family: roboto, sans-serif;
+    margin-top: 5px;
+    text-align: right;
+    color: white;
+}
+.enter--button{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.enter--redirect{
+    display: flex;
+    justify-content: center;
+    font-family: roboto, sans-serif;
+    font-weight: 500;
+    color: white;
+    margin-bottom: 30px;
+}

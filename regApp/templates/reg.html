@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500&family=Roboto:wght@400;700;900&display=swap" rel="stylesheet">
+    <title>Registration</title>
+</head>
+<body>
+    <div class="registration">
+        <div class="container">
+            <div class="wrapper">
+                <div class="registration--title">
+                    <h2 class="registration--title--text">Регистрация</h2>
+                </div>
+                <div class="registration--subtitle">
+                    <h3 class="registration--subtitle--text">Создайте учетную запись</h3> 
+                </div>
+                <form action="" method="post">
+                    {% csrf_token %}
+                    {% for field in form %}
+                        <div class="item">
+                            <div class="registration--label">{{ field.label_tag }}</div>
+                            {{ field }}
+                        </div>
+                    {% endfor %}
+                    <div class="registration--button">
+                        <button class="btn registration--btn" type="submit">Регистрация</button>
+                    </div>
+                </form>
+                <a class="registration--redirect" href="http://127.0.0.1:8000/enter/">Вернутся в странице входа</a>
+                <div class="line"></div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
